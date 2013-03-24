@@ -2,8 +2,8 @@
 #' 
 #' Function optimization through Genetic Algorithms.
 #' 
-#' Given a real-valued function and the associated search space,
-#' \code{gaoptim} will perform a maximization using the classic Genetic Algorithm
+#' Given a real-based or permutation-based function, and the associated search space,
+#' \code{gaoptim} will perform a function maximization using the Genetic Algorithm
 #' approach. For better performance, a real-number encoding is used.
 #' 
 #' All you need to get started is to provide a function and the associated search

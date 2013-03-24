@@ -60,22 +60,22 @@
   fitness achieved in each generation.\cr
   \code{bestIndividual}: \tab Returns a vector with the
   best solution found.\cr \code{evolve(h)}: \tab This is
-  the function you call to evolve your population. You need
-  to specify the number of generations to evolve.\cr
-  \code{population}: \tab Returns the current population
-  matrix. }
+  the function you call to evolve your population. \cr \tab
+  You also need to specify the number of generations to
+  evolve.\cr \code{population}: \tab Returns the current
+  population matrix. }
 }
 \description{
-  Setup a \code{GAReal} object that can be used to run the
-  algorithm.
+  Setup a \code{GAReal} object that can be used to perform
+  a real-based optimization.
 }
 \details{
-  This is the function used to configure and fine-tune the
-  algorithm. The basic usage requires only the \code{FUN}
-  parameter (function to be maximized), together with the
-  \code{lb} and \code{ub} parameters (lower and upper
-  search domain), all the other parameters have sensible
-  defaults.
+  This is the function used to configure and fine-tune a
+  real-based optimization. The basic usage requires only
+  the \code{FUN} parameter (function to be maximized),
+  together with the \code{lb} and \code{ub} parameters
+  (lower and upper search domain), all the other parameters
+  have sensible defaults.
 
   The parameters \code{selection}, \code{crossover} and
   \code{mutation} can also take a custom function as
@@ -140,7 +140,7 @@ selec.FUN = function(population, fitnessVec, nleft)
  # pick the other half randomly
  rowIdxs = c(rowIdxs, sample(idxs, remain, replace = TRUE))
 
- # Just return the row indexes
+ # Just return the nLeft selected row indexes
  return(rowIdxs)
 }
 

@@ -1,13 +1,16 @@
 Package: gaoptim
 Type: Package
-Title: Genetic Algorithm optimization for real-valued problems
-Version: 1.0
-Date: 2012-11-15
+Title: Genetic Algorithm optimization for real-based and
+        permutation-based problems
+Version: 1.1
+Date: 2013-03-24
 Author: Fernando Tenorio
 Maintainer: Fernando Tenorio <fnd.tenorio@gmail.com>
-Description: Performs a Genetic Algorithm optimization, given a
-        real-valued function and the associated search space.
+Description: Performs a Genetic Algorithm Optimization, given a
+        real-based or permutation-based function and the associated
+        search space.
 License: GPL-2
-Packaged: 2012-12-31 23:09:54 UTC; fernandotenorio
+Packaged: 2013-03-24 21:41:01 UTC; fernandotenorio
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-01-01 07:40:23
+Date/Publication: 2013-03-25 06:57:57

@@ -1,16 +1,15 @@
-\name{plot.GAReal}
-\alias{plot}
-\alias{plot.GAReal}
+\name{plot.GAPerm}
+\alias{plot.GAPerm}
 \title{Genetic Algorithm plot}
 \usage{
-  \method{plot}{GAReal} (x, xlab = "Generation",
+  \method{plot}{GAPerm} (x, xlab = "Generation",
     ylab = "Fitness", main = "GA optimization",
     bestcol = "steelblue", meancol = "tomato", lwd = 2,
     legend.pos = c("bottomright", "bottom", "bottomleft", "left", "topleft", "top", "topright", "right", "center"),
     ...)
 }
 \arguments{
-  \item{x}{An object of class \code{GAReal}.}
+  \item{x}{An object of class \code{GAPerm}.}
 
   \item{xlab}{The label for the x-axis.}
 
@@ -33,10 +32,5 @@
 }
 \description{
   A quick way to visualize the GA results.
-}
-\examples{
-ga = GAReal(function(x) sum(x), rep(0, 5), rep(10, 5))
-ga$evolve(200)
-plot(ga)
 }
 
